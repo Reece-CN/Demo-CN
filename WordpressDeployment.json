@@ -42,8 +42,7 @@
         },
         "VmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2"
-,
+            "defaultValue": "Standard_D1_v2",
             "metadata": {
                 "description": "The size of the VM"
             }
@@ -59,7 +58,7 @@
             "type": "string",
             "defaultValue": "PublicSubnet-sNet",
             "metadata": {
-                "description": "Name of the subnet in the virtual network"
+                "description": "Unique DNS Name for the Public IP used to access the Virtual Machine"
             }
         },
         "networkSecurityGroupName": {
@@ -67,6 +66,12 @@
             "defaultValue": "WordPress-nsg",
             "metadata": {
                 "description": "Name of the Network Security Group"
+            }
+        },
+        "dnsLabelPrefix": {
+            "type": "string",
+            "metadata": {
+                "description": "Used for the Public IPs dns name"
             }
         }
     },
