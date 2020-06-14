@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "WordPress-VM"
+        },
+        "adminUsername": {
+            "value": "AzureUser"
+        },
+        "AuthenticationType": {
+            "value": "password"
+        },
+        "adminPasswordOrKey": {
+            "value": "Null" // TODO: Fill in parameter value
+        },
+        "location": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "VmSize": {
+            "value": "Standard_D1_v2"
+        },
+        "virtualNetworkName": {
+            "value": "WordPress-vNet"
+        },
+        "subnetName": {
+            "value": "PublicSubnet-sNet"
+        },
+        "networkSecurityGroupName": {
+            "value": "WordPress-nsg"
+        },
+        "dnsLabelPrefix": {
+            "value": "Cloudnotebook" // TODO: Fill in parameter value
+        }
+    }
+}
