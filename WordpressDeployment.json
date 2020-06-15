@@ -229,7 +229,12 @@
                         "offer": "wordpresspro",
                         "sku": "default",
                         "version": "5.4.2005290837"
-                    }
+                    },
+                    "plan": {
+                        "name": "default",
+                        "publisher": "bitnami",
+                        "product": "wordpresspro"
+                        }
                 },
                 "networkProfile": {
                     "networkInterfaces": [
