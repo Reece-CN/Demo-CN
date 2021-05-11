@@ -13,7 +13,7 @@ $list = Get-Content C:\Temp\allowedlist.csv
 $ProblemMailboxes = $Currentlist | Where-Object {$list -notcontains $_}
 
 $HouseKeeping = "<# Housekeeping mailbox #>"
-$GetronicsSD = "<#SD mailbox #>"
+$CompanySD = "<#SD mailbox #>"
 $smtpServer = "<# SMTP Server #>"
 $from = "Stask@<#enter domain#>"
 $textEncoding =[System.Text.Encoding]::UTF8
@@ -36,8 +36,8 @@ Wintel Schedualed task
 
 
 #Details for when a ticket needs logged
-$logticket_emailaddress = "'$GetronicsSD, '$HouseKeeping'"
-$logticket_subject ="GCCORE Mailboxes Incorrectly Created - Security Issue "
+$logticket_emailaddress = "'$CompanySD, '$HouseKeeping'"
+$logticket_subject =" Mailboxes Incorrectly Created - Security Issue "
 $logticket_body ="
 <font face=""verdana"">
 Intednded for Internal Servicedesk,
